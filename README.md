@@ -5,8 +5,8 @@ This is a PyTorch implementation of a Generative Adversarial Network (GAN) for g
 ## Features
 
 - Multi-device Support: Automatic detection and accelerated GPU support for CUDA and MPS (Apple Silicon), with CPU fallback
-- Progress Tracking: Real-time training progress with progress bars
-- Image Generation: Saves generated images during training every 10 epochs
+- Progress Tracking: Real-time training progress tracking with progress bars
+- Image Generation: Saves generated images during training at every 10 epochs
 - Easy Model Loading: Functions to load and generate using the saved model
 
 ## Architecture
@@ -30,23 +30,23 @@ The generator network creates new images, while the discriminator network evalua
 ## Project Structure
 
 ```
-├── MNIST GAN.ipynb           # Main GAN implementation Jupyter Notebook
+├── MNIST GAN.ipynb           # Main GAN implementation Jupyter Notebook file
 ├── gan_model.pth             # Trained GAN model file
 ├── generated_images.zip      # Images generated at every 10 epochs during training (you can unzip to see the images)
 ├── LICENSE                   # The MIT License file
-├── README.md                 # This file
+├── README.md                 # This documentation file
 ```
 
 ## How to Run
 
-1. Make sure Python 3.8 + is installed in your system.
+1. Make sure Python 3.8+ is installed in your system.
 2. Clone this repository on your local machine.
 3. Install the required dependencies:
 ```bash
 pip install torch torchvision matplotlib numpy tqdm
 ```
-4. Open and run the `MNIST GAN.ipynb` Jupyter Notebook. With the `gan_model.pth` model file present in the project directory, the model will automatically be loaded in, and the generated handwritten digits will be displayed.
-5. You can also choose to train the model from scratch. For that, remove the `gan_model.pth` model file from the project directory and run the Jupyter Notebook again. The model will now train from scratch, which includes: downloading the MNIST dataset, setting up the GAN architecture, training for 100 epochs with progress tracking with handwritten digit images generated at every 10 epochs, and then final model saving and image generation at 100 epochs.
+4. Open and run the `MNIST GAN.ipynb` Jupyter Notebook. With the `gan_model.pth` file present in the project directory, the model will automatically be loaded in, and the generated handwritten digits will be displayed.
+5. You can also choose to train the model from scratch. For that, remove the `gan_model.pth` file from the project directory and run the Jupyter Notebook again. The model will now train from scratch, which includes: downloading the MNIST dataset, setting up the GAN architecture, training for 100 epochs with progress tracking in which handwritten digit image generation takes place every 10 epochs, and then final model saving and image generation occurs and when training finishes at 100 epochs.
 
 ## Contributing
 
