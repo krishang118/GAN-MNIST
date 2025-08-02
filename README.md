@@ -48,7 +48,10 @@ pip install torch torchvision matplotlib numpy tqdm
 4. Open and run the `MNIST GAN.ipynb` Jupyter Notebook. With the `gan_model.pth` model file present in the project directory, the model will automatically be loaded in, and the generated handwritten digits will be displayed.
 5. You can also choose to train the model from scratch. For that, remove the `gan_model.pth` model file from the project directory and run the Jupyter Notebook again. The model will now train from scratch, which includes: downloading the MNIST dataset, setting up the GAN architecture, training for 100 epochs with progress tracking with handwritten digit images generated at every 10 epochs, and then final model saving and image generation at 100 epochs.
 
+## Contributing
 
+Contributions are welcome!
 
-GAN-MNIST
-A GAN implementation for generating handwritten digits using the MNIST dataset.
+## License
+
+Distributed under the MIT License. 
