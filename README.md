@@ -46,7 +46,7 @@ The generator network creates new images, while the discriminator network evalua
 pip install torch torchvision matplotlib numpy tqdm
 ```
 4. Open and run the `MNIST GAN.ipynb` Jupyter Notebook. With the `gan_model.pth` file present in the project directory, the model will automatically be loaded in, and the generated handwritten digits will be displayed.
-5. You can also choose to train the model from scratch. For that, remove the `gan_model.pth` file from the project directory and run the Jupyter Notebook again. The model will now train from scratch, which includes: downloading the MNIST dataset, setting up the GAN architecture, training for 100 epochs with progress tracking in which handwritten digit image generation takes place every 10 epochs, and then final model saving and image generation occurs and when training finishes at 100 epochs.
+5. You can also choose to train the model from scratch. For that, remove the `gan_model.pth` file from the project directory and run the Jupyter Notebook again. The model will now train from scratch, which includes: downloading the MNIST dataset, setting up the GAN architecture, training for 100 epochs with progress tracking in which handwritten digit image generation takes place every 10 epochs, and then final model saving and image generation occurs when the training finishes at 100 epochs.
 
 ## Contributing
 
